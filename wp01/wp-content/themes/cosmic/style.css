@@ -1,0 +1,282 @@
+@charset "utf-8";
+/*
+Theme Name: Cosmic
+Description: Cosmic Blog 用テーマ
+Author: ZDRiVE, K.K.
+Version: 1.0
+*/
+
+/********************  Font  ********************/
+
+@font-face {
+    font-family: 'KitchenpoliceRegular';
+    src: url('fonts/KITCHENPOLICE-webfont.eot');
+    src: url('fonts/KITCHENPOLICE-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/KITCHENPOLICE-webfont.woff') format('woff'),
+         url('fonts/KITCHENPOLICE-webfont.ttf') format('truetype'),
+         url('fonts/KITCHENPOLICE-webfont.svg#KitchenpoliceRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/********************  Reset  ********************/
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+/********************  Body  ********************/
+
+body {
+  background-image: url(images/bg-cosmos.jpg);
+  background-repeat: no-repeat;
+  background-color: #000;
+  font-family: メイリオ, Helvetica, Arial, sans-serif;
+}
+
+/********************  Layout  ********************/
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  padding: 10px 0;
+}
+
+#container > footer {
+  padding: 10px 0;
+  color: #999;
+  font-size: 11px;
+}
+
+main {
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+#contents {
+  padding: 0 20px 20px;
+  float: left;
+  width: 640px;
+}
+
+aside {
+  width: 280px;
+  float: right;
+}
+
+/********************  Header  ********************/
+
+header h1 {
+  font-family: KitchenpoliceRegular, Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 5px;
+  color: #fff;
+}
+
+header h1 span {
+  font-family: メイリオ, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+header a {
+  color: #fff;
+}
+
+/****************  Global Navigation  ****************/
+
+#global {
+  margin-bottom: 10px;
+}
+
+#global ul {
+  font-family: KitchenpoliceRegular, Helvetica, Arial, sans-serif;
+  list-style: none;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+#global ul li {
+  float: left;
+}
+
+#global ul li.current_page_item a {
+  background-image: url(images/white30.png);
+}
+
+#global ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+#global ul li a:hover {
+  background-image: url(images/white30.png);
+}
+
+/********************  Main  ********************/
+
+main {
+  background-color: #fff;
+}
+
+main a {
+  color: #077;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/********************  Contents  ********************/
+
+#contents {
+  font-size: 14px;
+}
+
+#contents .post {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#contents h3 {
+  font-size: 14px;
+  color: #333;
+}
+
+#contents .post h2 {
+  font-size: 20px;
+  border-bottom: 1px dotted #aaa;
+}
+
+#contents .post h2 a {
+  color: #333;
+}
+
+#contents .post h2 a:hover {
+  color: #077;
+  text-decoration: none;
+}
+
+#contents .post p {
+  margin: 5px 0 10px 0;
+  font-size: 14px;
+}
+
+#contents .post .postmeta {
+  font-size: 12px;
+}
+
+#contents .post .more-link {
+}
+
+#contents #link {
+  border-top: 1px dotted #aaa;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+#contents .commentlist {
+  list-style: none;
+  font-size: 12px;
+}
+
+#contents .commentlist > li {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #aaa;
+}
+
+#contents .commentlist ul {
+  list-style: none;
+  padding-left: 40px;
+}
+
+#contents .commentlist .comment {
+  margin-top: 10px;
+}
+
+#contents .commentlist .comment .comment-body {
+  padding: 10px;
+  background-color: #ddd;
+}
+
+#contents .commentlist .comment p {
+  padding: 10px;
+  background-color: #fff;
+}
+
+#contents .commentlist .comment .comment-meta {
+  font-size: 12px;
+}
+
+#contents #respond {
+  margin-top: 10px;
+}
+
+#contents #trackback p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+#contents #trackback input {
+  width: 620px;
+}
+
+/********************  Side Bar  ********************/
+
+aside {
+  font-size: 12px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside > section, aside > div {
+  margin-bottom: 10px;
+}
+
+.widget h2 {
+  font-size: 12px;
+  color: #fff;
+  background-color: #077;
+  padding: 5px;
+}
+
+aside .widget ul {
+  padding: 5px 5px 5px 20px;
+  list-style: square;
+}
+
+.widget_search {
+  padding: 5px;
+}
+
+/******************** Other ********************/
+
+.alignright {
+  float: right;
+  margin-left: 10px;
+}
+
+.alignleft {
+  float: left;
+  margin-right: 10px;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

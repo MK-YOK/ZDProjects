@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.login #login h1 a {
+	width:237px;
+	height:22px;
+	background: url(../images/logo.png) no-repeat center center;
+}

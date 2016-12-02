@@ -1,0 +1,941 @@
+/*
+-------------------------------------------------------- */
+/* reset
+------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+html {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+q, blockquote {
+	quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none;
+}
+a img {
+	border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+/*
+-------------------------------------------------------- */
+/* base
+------------------------------------------------------- */
+
+body {
+	font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+	color: #333;
+	font-size: 100%;
+	line-height: 1.5;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	color: #666666;
+}
+.clearfix {
+	overflow: hidden;
+ *zoom: 1;
+}
+p {
+	margin: 20px 0;
+}
+/*
+-------------------------------------------------------- */
+/* layout
+------------------------------------------------------- */
+.container {
+	max-width: 960px;
+	margin: 0 auto;/*padding: 0;*/
+}
+#mainContentsOuter {
+	width: 73%;
+	float: right;
+	overflow: hidden;
+}
+#sideContentOuter {
+	width: 24%;
+	float: left;
+	background-color: #d3e0eb;
+	padding-bottom: 32768px;
+	margin-bottom: -32768px;
+	overflow: hidden;
+}
+/*
+------------------------------------------------------- */
+/* header
+------------------------------------------------------- */
+header {
+	border-top: 5px solid #0068b7;
+	height: 75px;
+}
+header .container {
+	position: relative;
+}
+header .logo {
+	position: absolute;
+	left: 0;
+	top: 15px;
+	margin: 0;
+	font-size: 2em;
+}
+header .logo .tagline {
+	font-size: 10px;
+	color: #666;
+	display: block;
+	line-height: 1;
+	font-weight: bold;
+}
+header .utilNav {
+	position: absolute;
+	right: 0;
+	top: 12px;
+	margin: 0;
+}
+header .utilNav li {
+	float: left;
+	font-size: 10px;
+	line-height: 1.2;
+	border-right: 1px solid #666;
+	padding: 0 20px;
+}
+header .utilNav li:last-child {
+	padding-right: 0;
+	border-right: none;
+}
+header p.docRequest {
+	position: absolute;
+	right: 0;
+	top: 34px;
+	margin: 0;
+}
+/*
+-------------------------------------------------------- */
+/* nav
+------------------------------------------------------- */
+#siteNav {
+	margin-top: 75px;
+	height: 50px;
+	background: url(../images/gnav/base_btn.jpg) 0 0 repeat-x;/*background-size: contain;*/
+}
+#siteNav ul {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+#siteNav ul li {
+	text-decoration: none;
+	text-indent: -9999px;
+	float: left;
+	width: 160px;
+	height: 50px;
+	background-size: cover;
+}
+#siteNav ul li a {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: block;
+	width: 160px;
+	height: 50px;
+	background-size: cover;
+}
+/*normal*/
+#siteNav ul li:nth-child(1) a {
+	background-image: url(../images/gnav/btn01.jpg);
+}
+#siteNav ul li:nth-child(2) a {
+	background-image: url(../images/gnav/btn02.jpg);
+}
+#siteNav ul li:nth-child(3) a {
+	background-image: url(../images/gnav/btn03.jpg);
+}
+#siteNav ul li:nth-child(4) a {
+	background-image: url(../images/gnav/btn04.jpg);
+}
+#siteNav ul li:nth-child(5) a {
+	background-image: url(../images/gnav/btn05.jpg);
+}
+#siteNav ul li:nth-child(6) a {
+	background-image: url(../images/gnav/btn06.jpg);
+}
+/*hover*/
+#siteNav ul li:nth-child(1) a:hover {
+	background-image: url(../images/gnav/h/btn01.jpg);
+}
+#siteNav ul li:nth-child(2) a:hover {
+	background-image: url(../images/gnav/h/btn02.jpg);
+}
+#siteNav ul li:nth-child(3) a:hover {
+	background-image: url(../images/gnav/h/btn03.jpg);
+}
+#siteNav ul li:nth-child(4) a:hover {
+	background-image: url(../images/gnav/h/btn04.jpg);
+}
+#siteNav ul li:nth-child(5) a:hover {
+	background-image: url(../images/gnav/h/btn05.jpg);
+}
+#siteNav ul li:nth-child(6) a:hover {
+	background-image: url(../images/gnav/h/btn06.jpg);
+}
+/*current*/
+#siteNav ul li:nth-child(1) {
+	background-image: url(../images/gnav/c/btn01.jpg);
+}
+#siteNav ul li:nth-child(2) {
+	background-image: url(../images/gnav/c/btn02.jpg);
+}
+#siteNav ul li:nth-child(3) {
+	background-image: url(../images/gnav/c/btn03.jpg);
+}
+#siteNav ul li:nth-child(4) {
+	background-image: url(../images/gnav/c/btn04.jpg);
+}
+#siteNav ul li:nth-child(5) {
+	background-image: url(../images/gnav/c/btn05.jpg);
+}
+#siteNav ul li:nth-child(6) {
+	background-image: url(../images/gnav/c/btn06.jpg);
+}
+/*
+-------------------------------------------------------- */
+/* Hero
+------------------------------------------------------- */
+#hero {
+	height: 345px;
+	background: url(../images/cloud.jpg) 50% 0 no-repeat, url(../images/back_main.jpg) 0 0 repeat-x;
+	padding-top: 20px;
+	margin-top: 50px;
+}
+#hero .mainImg {
+	width: 960px;
+	height: 320px;
+	background: url(../images/mainimg.jpg) 0 0 no-repeat;
+	margin: 0 auto;
+	text-indent: -9999px;
+	position: relative;
+}
+#hero .badge {
+	position: absolute;
+	top: auto;
+	bottom: -5px;
+	left: 0;
+	right: auto;
+	width: 230px;
+	height: 117px;
+	background: url(../images/badge.png) 0 0 no-repeat;
+}
+.appeal #hero, .course #hero, .pricelist #hero, .meetplace #hero, .contact #hero, .page404 #hero, .news #hero {
+	height: 145px;
+	background:url(../images/cloud2.jpg) 50% 0 no-repeat, url(../images/back2_main.jpg) 0 0 repeat-x;
+	padding-top: 20px;
+	margin-top: 50px;
+}
+.appeal #hero .mainImg, .course #hero .mainImg, .pricelist #hero .mainImg, .meetplace #hero .mainImg, .contact #hero .mainImg, .page404 #hero .mainImg, .news #hero  .mainImg{
+	width: 960px;
+	height: 120px;
+	margin: 0 auto;
+	text-indent: -9999px;
+	position: relative;
+}
+.appeal #hero .mainImg {
+	background: url(../images/tokyo_charm.jpg) 0 0 no-repeat;
+}
+.course #hero .mainImg {
+	background: url(../images/course_info.jpg) 0 0 no-repeat;
+}
+.pricelist #hero .mainImg {
+	background: url(../images/fee_info.jpg) 0 0 no-repeat;
+}
+.meetplace #hero .mainImg {
+	background: url(../images/meeting_place.jpg) 0 0 no-repeat;
+}
+.contact #hero .mainImg {
+	background: url(../images/contact_us.jpg) 0 0 no-repeat;
+}
+.page404 #hero .mainImg {
+	background: url(../images/page404.jpg) 0 0 no-repeat;
+}
+.news #hero .mainImg {
+	background: url(../images/news.jpg) 0 0 no-repeat;
+}
+/*
+-------------------------------------------------------- */
+/* contents
+------------------------------------------------------- */
+.mainContents {
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 16px;
+	border: 1px solid #ddd;
+	background: url(../images/square.png) 25px center no-repeat, url(../images/title_bg.png) 0 0 repeat-x;
+	height: 43px;
+	line-height: 2.7;
+	font-weight: bold;
+	padding-left: 43px;
+}
+/*
+------------------------------------------------------- */
+/* sideNav
+------------------------------------------------------- */
+.sideNav {
+	background-color: #fff;
+	margin: 10px;
+	padding-left: 0;
+}
+.sideNav li {
+	background: url(../images/sub_dot.png) 0 bottom repeat-x;
+}
+.sideNav li:last-child {
+	background: none;
+}
+.sideNav li a {
+	display: block;
+	font-weight: bold;
+	line-height: 1.2;
+	padding: 10px;
+}
+.sideNav li a:hover {
+	background-color: #e9f0f5;
+}
+.sideNav li a .sideNavinner {
+	padding: 8px 20px 2px;
+	border-left: 5px solid #0068b7;
+	line-height: 1;
+	display: block;
+}
+.sideNav li a .sideNavinner .sub {
+	font-size: 9px;
+	color: #0068b7;
+	font-weight: bold;
+	vertical-align: 3px;
+}
+.sideNav li a .sideNavinner .sub:before {
+	content: "\A";
+	white-space: pre;
+}
+/*
+------------------------------------------------------- */
+/* company
+------------------------------------------------------- */
+.companyInfoinner {
+	border: 1px solid #ddd;
+	padding: 20px 0 5px 20px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e9eff5+100 */
+background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOWVmZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #ffffff 0%, #e9eff5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e9eff5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e9eff5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%, #e9eff5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%, #e9eff5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%, #e9eff5 100%); /* W3C */
+}
+.companyInfoinner h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: -12px;
+}
+.companyInfoinner p {
+	font-size: 14px;
+}
+/*
+------------------------------------------------------- */
+/* banner
+------------------------------------------------------- */
+.topicBanner {
+	text-align: center;
+	padding-top: 10px;
+}
+/*
+------------------------------------------------------- */
+/* footer
+------------------------------------------------------- */
+footer {
+	background-color: #0068b7;
+}
+footer .container {
+	position: relative;
+	height: 150px;
+}
+footer .container .footerNav {
+	position: absolute;
+	left: 0;
+	top: 20px;
+	margin: 0;
+}
+footer .container .footerNav li {
+	float: left;
+	font-size: 10px;
+	line-height: 1.2;
+	border-right: 1px solid #fff;
+	padding: 0 20px;
+}
+footer .container .footerNav li:first-child {
+	padding-left: 0;
+}
+footer .container .footerNav li:last-child {
+	border:none;
+	padding-right:0;
+}
+footer .container .footerNav li a {
+	color: #fff;
+}
+footer .container .copyright {
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+}
+/*
+Top page
+------------------------------------------------------- */
+/* event
+------------------------------------------------------- */
+.information .eventBox {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	padding: 15px 20px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e9eff5+100 */
+background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOWVmZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #ffffff 0%, #e9eff5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e9eff5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e9eff5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%, #e9eff5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%, #e9eff5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%, #e9eff5 100%); /* W3C */
+}
+.information .eventBox:nth-of-type(2) {
+	border-left-color: #fff;
+}
+.information .eventBox a > img {
+	float: left;
+	margin-right: 20px;
+}
+.information .eventBox h3 {
+/*margin-bottom: -0.75em;*/
+}
+.information .eventBox p {
+	line-height: 1.5;
+}
+/*
+------------------------------------------------------- */
+/* chiiki
+------------------------------------------------------- */
+.chiiki h2 {
+	margin-bottom: 15px;
+}
+.chiiki h2 + img {
+	float: left;
+}
+.chiiki h3 {
+	background: url(../images/news_dt.png) 0 bottom repeat-x;
+	margin-left: 270px;
+	line-height: 1.3;
+}
+.chiiki h3 img {
+	max-width: 100%;
+	height: auto;
+}
+.chiiki p {
+	font-size: 14px;
+	margin-left: 270px;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+/*
+------------------------------------------------------- */
+/* news
+------------------------------------------------------- */
+.news h2 {
+	margin-bottom: 15px;
+}
+.news dt {
+	float: left;
+	clear: left;
+	width: 9em;
+	line-height: 44px;
+	font-size: 10px;
+}
+.news dd {
+	padding: 10px 0 10px 9em;
+	margin: 0;
+	background: url(../images/news_dt.png) 0 bottom repeat-x;
+}
+.news dd:before {
+	content: "INFO";
+	color: #fff;
+	font-size: 10px;
+	background-color: #0068b7;
+	padding: 1px 15px;
+	margin-right: 25px;
+}
+/*
+-------------------------------------------------------- */
+/* appeal
+------------------------------------------------------- */
+.recomend {
+	padding: 50px 20px;
+	border-bottom: 1px dotted #ddd;
+	position: relative;
+}
+.recomend figure img {
+	width: 50%;
+	height: auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+}
+.recomend:nth-of-type(2) {
+	padding-top: 20px;
+}
+.recomend:nth-of-type(odd) figure img {
+	float: left;
+	margin-right: 40px;
+}
+.recomend:nth-of-type(even) figure img {
+	float: right;
+	margin-left: 40px;
+}
+.recomend figure figcaption {
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	background-color: #0068b7;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	padding-top: 40px;
+	text-align: center;
+	box-sizing: border-box;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.5);
+}
+.recomend:nth-of-type(odd) figure figcaption {
+	left: 0;
+}
+.recomend:nth-of-type(3) figure figcaption {
+	padding-top: 30px;
+}
+.recomend h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: #0068b7;
+	font-size: 20px;
+}
+.recomend h3 span {
+	font-size: 12px;
+	padding-left: 12px;
+}
+/*
+-------------------------------------------------------- */
+/* course
+------------------------------------------------------- */
+.courseBox {
+	border: solid 1px #ddd;
+	margin: 0 2% 20px 0;
+	padding: 10px 10px 30px 10px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,dfdfdf+100 */
+background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #ffffff 0%, #dfdfdf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #dfdfdf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%, #dfdfdf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%, #dfdfdf 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%, #dfdfdf 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%, #dfdfdf 100%); /* W3C */
+	-moz-box-shadow: #ccc 0px 2px 3px, #fff 0px 0px 3px 2px inset;
+	-webkit-box-shadow: #ccc 0px 2px 3px, #fff 0px 0px 3px 2px inset;
+	box-shadow: #ccc 0px 2px 3px, #fff 0px 0px 3px 2px inset;
+	position: relative;
+	text-align: center;
+	width: 49%;
+	box-sizing: border-box;
+	float: left;
+}
+.courseBox:nth-of-type(2n+1) {
+	margin-right: 0;
+}
+.courseBox h3 {
+	font-size: 16px;
+	border-bottom: 1px dotted #ddd;
+	margin-bottom: 15px;
+}
+.courseBox p {
+	font-size: 14px;
+	text-align: left;
+}
+.courseBox img {
+	max-width: 87%;
+	height: auto;
+	margin: 0 auto;
+}
+.courseBox dl {
+	font-size: 12px;
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+.courseBox dl dt {
+	float: left;
+	width: 4em;
+	padding: 2px 5px;
+	background-color: #0068b7;
+	color: #fff;
+	margin: 0 0 2px 0;
+}
+.courseBox dl dd {
+	padding: 2px 0 2px 6em;
+	text-align: left;
+	margin: 0 0 2px 0;
+}
+.courseBox .batch {
+	position: absolute;
+	color: #eb3528;
+	right: 40px;
+	bottom: 65px;
+	text-align: center;
+}
+.courseBox .batch .batchTitle, .courseBox .batch .tani {
+	display: block;
+	font-size: 10px;
+	line-height: 1.2;
+}
+.courseBox .batch .batchTime {
+	font-size: 38px;
+	line-height: 1;
+	font-family: 'Droid Serif', serif;
+}
+.courseBox .reserve .btn {
+	font-size: 14px;
+	background-color: #eb3528;
+	border: 1px solid #ddd;
+	color: #fff;
+	text-shadow: 0px 0px 1px #aaaaaa;
+	width: 100px;
+	padding: 10px;
+}
+.courseBox .reserve .btn:hover {
+	background-color: #ef6157;
+}
+/*
+-------------------------------------------------------- */
+/* pricelist, table@contact
+------------------------------------------------------- */
+.priceTable table, .contact table {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.priceTable table th, .priceTable table td, .contact table th, .contact table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	font-size: 14px;
+}
+.priceTable table th, .contact table th {
+	background-color: #0068b7;
+	color: #fff;
+}
+.contact table th {
+	width: 20%;
+}
+/*
+-------------------------------------------------------- */
+/* meetplace
+------------------------------------------------------- */
+.map {
+	text-align: center;
+}
+.map h3 {
+	font-size: 18px;
+	text-align: left;
+	margin-bottom:15px;
+}
+.map p {
+	font-size: 14px;
+	border-top: 1px dotted #ddd;
+	padding-top: 10px;
+	text-align: left;
+}
+.map .movie {
+	margin-bottom: 20px;
+}
+.map .movie p {
+	border: none;
+}
+.embed-wrapper iframe {
+	width:560px;
+	height:315px;
+}
+/*
+-------------------------------------------------------- */
+/* contact
+------------------------------------------------------- */
+p.required {
+	color: #0068b7;
+	font-size: 12px;
+}
+form {
+	padding: 0 20px;
+	text-align: right;
+	font-size: 14px;
+	font-family: inherit;
+}
+/*form p {
+  margin-bottom: 1.5em;
+}*/
+form label {
+	display: block;
+	text-align: left;
+}
+form label span {
+	color: #0068b7;
+	font-weight: bold;
+	margin-left: 2px;
+}
+form input, form textarea {
+	width: 100%;
+	padding: 5px 10px;
+	border: solid 1px #ddd;
+	box-sizing: border-box;
+}
+form input:focus, form textarea:focus {
+	-moz-box-shadow: 0px 0px 5px #333333;
+	-webkit-box-shadow: 0px 0px 5px #333333;
+	box-shadow: 0px 0px 5px #333333;
+}
+form textarea {
+	height: 80px;
+}
+form input[type="submit"] {
+	padding: 10px 0;
+	background-color: #0068b7;
+	color: #fff;
+	cursor: pointer;
+	width: 25%;
+}
+form input[type="submit"]:hover {
+	background-color: #eb3528;
+}
+
+.error input, .error textarea {
+	background-color: #ddeeff;
+}
+
+/*
+-------------------------------------------------------- */
+/* tablet
+------------------------------------------------------- */
+@media (max-width: 768px) {
+/*
+-------------------------------------------------------- */
+/* layout
+------------------------------------------------------- */
+
+  .container {
+	width: auto;
+}
+#mainContentsOuter {
+	width: 98%;
+	float: none;
+	margin:0 auto 20px;
+}
+#sideContentOuter {
+	float: none;
+	width: 100%;
+}
+/*
+-------------------------------------------------------- */
+/* nav
+------------------------------------------------------- */
+  #siteNav {
+	height: 40px;
+}
+#siteNav ul li {
+	height: 40px;
+	width: 127px;
+}
+#siteNav ul li a {
+	height: 40px;
+	width: 127px;
+}
+/*
+-------------------------------------------------------- */
+/* Hero
+------------------------------------------------------- */
+  #hero .badge {
+	display: none;
+}
+.top #hero {
+	margin-top:40px;
+	padding-top:16px;
+	background:url(../images/cloud3.jpg) 50% bottom no-repeat, url(../images/back_main.jpg) 0 bottom repeat-x;
+	height:260px;
+	margin-bottom:20px;
+}
+.appeal #hero, .course #hero, .pricelist #hero, .meetplace #hero, .contact #hero, .page404 #hero, .news #hero {
+	margin-top:40px;
+	padding-top:16px;
+	height: 100px;
+	background:url(../images/cloud4.jpg) 50% bottom no-repeat, url(../images/back_main.jpg) 0 bottom repeat-x;
+	margin-bottom:20px;
+}
+.appeal #hero .mainImg, .course #hero .mainImg, .pricelist #hero .mainImg, .meetplace #hero .mainImg, .contact #hero .mainImg, .page404 #hero .mainImg, .news #hero .mainImg {
+	width:768px;
+	background-size:contain;/*display: none;*/
+}
+.top #hero .mainImg {
+	/*display: none;*/
+    width:768px;
+	background-size:contain;
+}
+}
+
+/*
+-------------------------------------------------------- */
+/* smartphone
+------------------------------------------------------- */
+@media (max-width: 479px) {
+/*
+-------------------------------------------------------- */
+/* layout
+------------------------------------------------------- */
+  #mainContentsOuter {
+	margin-top: 100px;
+}
+/*
+------------------------------------------------------- */
+/* header
+------------------------------------------------------- */
+  header .utilNav, header p.docRequest {
+	display: none;
+}
+/*
+-------------------------------------------------------- */
+/* nav
+------------------------------------------------------- */
+  #siteNav {
+	height: 80x;
+}
+#siteNav ul li:nth-of-type(4) {
+	clear: left;
+}
+/*
+-------------------------------------------------------- */
+/* Hero
+------------------------------------------------------- */
+  #hero {
+	display: none;
+}
+/*
+------------------------------------------------------- */
+/* footer
+------------------------------------------------------- */
+  footer .container {
+	height: 100px;
+	text-align: center;
+}
+footer .container .footerNav {
+	width:194px;
+	left:50%;
+	margin-left:-97px;
+}
+footer .container .copyright {
+	width:241px;
+	left:50%;
+	margin-left:-120px;
+}
+/*
+Top page
+------------------------------------------------------- */
+/* event
+------------------------------------------------------- */
+  .information .eventBox {
+	float: none;
+	width: 100%;
+}
+/*
+------------------------------------------------------- */
+/* chiiki
+------------------------------------------------------- */
+  .chiiki h2 + img {
+	float: none;
+	display: block;
+	margin: 0 auto 20px;
+}
+.chiiki h3 {
+	margin-left: 0px;
+}
+.chiiki p {
+	margin-left: 0px;
+}
+/*
+-------------------------------------------------------- */
+/* appeal
+------------------------------------------------------- */
+  .recomend figure img {
+	float: none;
+	width: 100%;
+	margin:0 auto 15px;
+	box-sizing:border-box;
+}
+.recomend figure figcaption {
+	display: none;
+}
+/*
+-------------------------------------------------------- */
+/* course
+------------------------------------------------------- */
+  .courseBox {
+	float: none;
+	width: 100%;
+}
+/*
+-------------------------------------------------------- */
+/* meetplace
+------------------------------------------------------- */
+
+    .embed-wrapper {
+	width: 100%;
+	padding-bottom: 56.25%;/*calc(315/560*100) 画面が16:9*/
+	position: relative;
+}
+.embed-wrapper iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+}
